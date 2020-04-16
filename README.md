@@ -1,2 +1,4 @@
-# Gram-Schmidt-Orthogonalization-Process
+# Gram Schmidt Orthogonalization Process
 The classic Gram Schmidt vector orthogonalization algorithm
+
+# Algorithm
