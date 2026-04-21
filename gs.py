@@ -14,7 +14,7 @@ def normalize(v: NDArray[np.float64], *, tol: float = 1e-12) -> NDArray[np.float
 
     Args:
         v: Vector to normalize.
-        tol: Minimum norm threshold.
+        tol: Minimum norm threshold. Defaults to ``1e-12``.
 
     Returns:
         Unit vector in the same direction as ``v``.
@@ -56,8 +56,8 @@ def gram_schmidt(
 
     Args:
         vectors: Iterable of 1-D vectors with equal dimension.
-        method: Either ``"classical"`` or ``"modified"``.
-        tol: Minimum norm threshold to detect linear dependence.
+        method: Either ``"classical"`` or ``"modified"``. Defaults to ``"modified"``.
+        tol: Minimum norm threshold to detect linear dependence. Defaults to ``1e-12``.
 
     Returns:
         A 2-D NumPy array of shape ``(k, n)`` where each row is an orthonormal vector.

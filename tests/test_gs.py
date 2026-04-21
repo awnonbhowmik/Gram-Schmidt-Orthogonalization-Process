@@ -49,7 +49,7 @@ def test_rejects_mismatched_dimensions() -> None:
 
 def test_rejects_linearly_dependent_vectors() -> None:
     vectors = [np.array([1.0, 0.0]), np.array([2.0, 0.0])]
-    with pytest.raises(ValueError, match="linearly dependent|near-zero|zero"):
+    with pytest.raises(ValueError, match="linearly dependent"):
         gram_schmidt(vectors)
 
 
